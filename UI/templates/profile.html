@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TODO_APP</title>
+        
+        <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <img src="../static/images/logo.png" class="header__logo"/>
+            <a href="javascript:;" class="header__brand_name">TODO_APP</a>
+            <input class="input header__search-input" 
+                                type="text"    
+                                id="header__search" 
+                                name="header__search"
+                                placeholder="Add new Task" />
+            <div class="header__auth_buttons">
+                <a href="profile.html" class="btn bg-slate header__button">Add Task</a>
+            </div>
+        </header>
+
+        <!-- content -->
+        <div class="content">
+                    <div class="content__top_bar">
+                <div class="content__top_bar--right">
+                <a href="login.html" class="btn bg-blue content__question_button">Logout</a>
+                <a href="profile.html" class="btn bg-green content__question_button">My Profile</a>
+                </div>
+            </div>
+            <div class="card statistic__card bg-info text-white">
+                <div>
+                    <span>ALL TASKS</span>
+                    <span class="statistic__card_value">100</span>
+                </div>
+                <i class="fa fa-question-circle"></i>
+            </div>
+            <div class="card statistic__card bg-success text-white">
+                <div>
+                    <span>COMPLETED TASKS</span>
+                    <span class="statistic__card_value">80</span>
+                </div>
+                <i class="fa fa-check"></i>
+            </div>
+            <div class="card statistic__card bg-slate text-white">
+                <div>
+                    <span>PENDING TASKS</span>
+                    <span class="statistic__card_value">20</span>
+                </div>
+                <i class="fa fa-thumbs-up "></i>
+            </div>
+            <div class="content__tables">
+                <div class="card table__card bg-white text-slate">
+                    <h4>My Completed Tasks</h4>
+                    <table>
+                        <thead class="bg-slate">
+                            <tr>
+                                <th>Date</th>
+                                <th>Tasks</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>06-08-2018</td>
+                                <td>Wake up and wash clothes</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td>06-08-2018</td>
+                                <td>Have lunch with friends at KFC.</td>
+                                <td>Completed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card table__card bg-white text-slate">
+                    <h4>My Pending Tasks</h4>
+                    <table>
+                        <thead class="bg-slate">
+                            <tr>
+                                <th>Date</th>
+                                <th>Tasks</th>
+                                <th>Status</th>
+                                <th>Complete</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10-08-2018</td>
+                                <td>Complete Andela levelUP assignments</td>
+                                <td>Pending</td>
+                                <td><button class="btn bg-green"><i class="fa fa-times">COMPLETE</i></button></td>
+                                <td><button class="btn bg-danger"><i class="fa fa-times">DELETE</i></button></td>
+                            </tr>
+                            <tr>
+                                <td>10-08-2018</td>
+                                <td>Complete school coursework</td>
+                                <td>Pending</td>
+                                <td><button class="btn bg-green"><i class="fa fa-times">COMPLETE</i></button></td>
+                                <td><button class="btn bg-danger"><i class="fa fa-times">DELETE</i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
