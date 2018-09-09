@@ -1,0 +1,66 @@
+@import 'colors.css';
+@import 'grid.css';
+@import 'components.css';
+@import 'helpers.css';
+
+
+body {
+  margin: 0;
+  font-family: 'Averta', serif;
+  background: url(../images/todo5.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+  
+a {
+  color: #595454;
+  outline: 0;
+}
+  
+  /* header */
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top:0;
+}
+  
+.header__logo {
+  width: 50px;
+  height: 50px;
+  display: block;
+  float: left;
+  padding: 10px 0px;
+}
+
+.header__brand_name {
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  color: #292525;
+  padding: 18px 0px;
+  text-decoration: none;
+}
+
+.header__buttons {
+  float: right;
+  padding:15px 30px 0px 0px;
+}
+
+.header__auth_buttons {
+  float: left;
+  padding:15px 30px 0px 0px;
+}
+.header__button {
+  margin: 0 20px;
+  text-decoration: none;
+}
+.header__search-input{
+  width: 30%;
+  margin-top: 10px;
+}
+
+.header__search-input:active, .header__search-input:focus {
+  border-color: #D574E6;
+}
